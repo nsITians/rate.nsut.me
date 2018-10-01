@@ -1,0 +1,17 @@
+.sidebar-menu-item {
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+}
+
+.down-arrow-icon {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
