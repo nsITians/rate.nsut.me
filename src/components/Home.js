@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import {
   Button,
   Container,
@@ -209,10 +210,17 @@ const Home = () => (
           <List.Item as="li">Refrain from using bad words.</List.Item>
           <List.Item as="li">Spam comments will be deleted.</List.Item>
         </List>
-        <Button as="a" size="large" style={{ marginTop: '2em' }}>
-          <Icon name="star" />
-          Write a Review
-        </Button>
+        <Link to="/review">
+          <Button
+            as="a"
+            size="large"
+            color="green"
+            style={{ marginTop: '2em' }}
+          >
+            <Icon name="star" />
+            Write a Review
+          </Button>
+        </Link>
       </Container>
     </Segment>
 
