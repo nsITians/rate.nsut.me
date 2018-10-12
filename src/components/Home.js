@@ -193,8 +193,7 @@ const Home = () => (
         </Header>
         <List as="ol">
           <List.Item as="li">
-            Ensure that the selected course code, professor name and the year
-            attended are all correct.
+            Ensure that the selected course and professor name are correct.
           </List.Item>
           <List.Item as="li">
             Check your grammar before posting comments.

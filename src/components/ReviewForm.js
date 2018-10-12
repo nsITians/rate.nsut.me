@@ -2,13 +2,20 @@ import React, { Component } from 'react'
 import { Button, Container, Grid, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
-import CourseSelector from './CourseSelector'
-import ProfessorSelector from './ProfessorSelector'
+import CourseSelector from './form/CourseSelector'
+import ProfessorSelector from './form/ProfessorSelector'
+import CourseReview from './form/CourseReview'
+import Captcha from './form/Captcha'
 import Footer from './Footer'
 
 import './ReviewForm.css'
 
-const pages = [<CourseSelector />, <ProfessorSelector />]
+const pages = [
+  <CourseSelector />,
+  <ProfessorSelector />,
+  <CourseReview />,
+  <Captcha />
+]
 
 class ReviewForm extends Component {
   constructor(props) {
@@ -54,11 +61,7 @@ class ReviewForm extends Component {
 
   renderSubmitButton() {
     if (this.state.page == pages.length - 1)
-      return (
-        <Button primary floated="right">
-          Submit
-        </Button>
-      )
+      return <Button primary>Submit</Button>
   }
 
   render() {
