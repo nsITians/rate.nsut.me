@@ -4,8 +4,11 @@ node_js:
 cache:
   directories:
     - node_modules
+before_install:
+  - yarn install
+  - npm install --global surge
 script:
-  - npm run build
+  - yarn build
 deploy:
   provider: surge
   skip_cleanup: true
@@ -13,3 +16,5 @@ deploy:
   project: ./build/
 on:
   branch: master
+after_success:
+  - bash ./scripts/deployed.sh

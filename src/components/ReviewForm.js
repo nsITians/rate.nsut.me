@@ -60,7 +60,7 @@ class ReviewForm extends Component {
   }
 
   renderSubmitButton() {
-    if (this.state.page == pages.length - 1)
+    if (this.state.page === pages.length - 1)
       return <Button primary>Submit</Button>
   }
 
