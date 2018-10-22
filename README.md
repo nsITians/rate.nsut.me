@@ -1,4 +1,5 @@
 # Frontend for Rate-My-Teacher project
+[![Build Status](https://travis-ci.org/nsITians/rate.nsut.me.svg?branch=master)](https://travis-ci.org/nsITians/rate.nsut.me)
 
 ## Setup
 
